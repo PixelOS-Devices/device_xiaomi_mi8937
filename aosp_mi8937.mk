@@ -18,6 +18,17 @@ $(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 # Inherit from mi8937 device
 $(call inherit-product, device/xiaomi/mi8937/device.mk)
 
+# Overlays
+PRODUCT_PACKAGES += \
+    xiaomi_landtoni_overlay_lineage \
+    xiaomi_ulysse_overlay_lineage
+
+# Overlays
+PRODUCT_PACKAGES += \
+    xiaomi_prada_overlay_lineage \
+    xiaomi_rolex_overlay_lineage \
+    xiaomi_riva_overlay_lineage
+
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := mi8937
 PRODUCT_NAME := aosp_mi8937
